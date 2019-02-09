@@ -53,7 +53,11 @@ nuevas beneficiando de esta manera a los usuarios que desean hacer uso de los pr
 ## INTEGRANTES
 
 _Nicolle Rodriguez Vivas_  nrodriguez4917@misena.edu.co
+
 _Cristian Yesid Franco Tabares_   cyfranco1@misena.edu.co
+
 _Marlon Didier Leon Correa_   mdleon04@misena.edu.co
+
 _Jeisson Orlando Reyes Angel_   joreyes7@misena.edu.co
+
 _Nicolas Vergara Cifuentes_ nvergara11@misena.edu.co
