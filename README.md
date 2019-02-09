@@ -17,19 +17,20 @@ en la que también se permita controlar el inventario de la empresa._
 
 ### OBJETIVOS ESPECÍFICOS
 
--Permitir el registro del producto con sus principales características.
--Permitir la categorización de los productos ingresados en cada registro.
--Implementar un sistema de búsqueda por medio de filtros.
--Administrar una base de datos con las escogencias de cada usuario, para así determinar los productos 
- más destacados por cierto rango de tiempo. 
--Controlar el inventario por medio de entradas y salidas por producto.
--Permitir que el sistema genere un registro de usuario donde determine el gusto de cada uno.
--Controlar a los clientes y proveedores por medio de registros.
--Publicitar los productos últimamente adquiridos e innovadores
--Controlar la cantidad de productos en stock mínimo 
--Manejar un sistema de facturación
--Manejar términos y condiciones
-
+_
+- Permitir el registro del producto con sus principales características.
+- Permitir la categorización de los productos ingresados en cada registro.
+- Implementar un sistema de búsqueda por medio de filtros.
+- Administrar una base de datos con las escogencias de cada usuario, para así determinar los productos 
+  más destacados por cierto rango de tiempo. 
+- Controlar el inventario por medio de entradas y salidas por producto.
+- Permitir que el sistema genere un registro de usuario donde determine el gusto de cada uno.
+- Controlar a los clientes y proveedores por medio de registros.
+- Publicitar los productos últimamente adquiridos e innovadores
+- Controlar la cantidad de productos en stock mínimo 
+- Manejar un sistema de facturación
+- Manejar términos y condiciones
+_
 
 ## ALCANCES Y LIMITACIONES
 
