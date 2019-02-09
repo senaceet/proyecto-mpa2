@@ -17,31 +17,31 @@ en la que también se permita controlar el inventario de la empresa._
 
 ### OBJETIVOS ESPECÍFICOS
 
-_
-- Permitir el registro del producto con sus principales características.
-- Permitir la categorización de los productos ingresados en cada registro.
-- Implementar un sistema de búsqueda por medio de filtros.
-- Administrar una base de datos con las escogencias de cada usuario, para así determinar los productos 
-  más destacados por cierto rango de tiempo. 
-- Controlar el inventario por medio de entradas y salidas por producto.
-- Permitir que el sistema genere un registro de usuario donde determine el gusto de cada uno.
-- Controlar a los clientes y proveedores por medio de registros.
-- Publicitar los productos últimamente adquiridos e innovadores
-- Controlar la cantidad de productos en stock mínimo 
-- Manejar un sistema de facturación
-- Manejar términos y condiciones
-_
+
+- _Permitir el registro del producto con sus principales características._
+- _Permitir la categorización de los productos ingresados en cada registro._
+- _Implementar un sistema de búsqueda por medio de filtros._
+- _Administrar una base de datos con las escogencias de cada usuario, para así determinar los productos_ 
+  _más destacados por cierto rango de tiempo._ 
+- _Controlar el inventario por medio de entradas y salidas por producto._
+- _Permitir que el sistema genere un registro de usuario donde determine el gusto de cada uno._
+- _Controlar a los clientes y proveedores por medio de registros._
+- _Publicitar los productos últimamente adquiridos e innovadores_
+- _Controlar la cantidad de productos en stock mínimo_
+- _Manejar un sistema de facturación_
+- _Manejar términos y condiciones_
+
 
 ## ALCANCES Y LIMITACIONES
 
--Tener posicionamiento en la Web
--Brindar buen servicio al cliente
--Funcionalidad de nuestra página para los usuarios
--Lograr los niveles de servicio y soporte deseados, a un bajo costo
--Ofertar sus productos y servicios
--Permanecer siempre abierto, 7días x 24hrs
--Solo pueden acceder personas con acceso a Internet o nuevas tecnologías
--No tener múltiples idiomas
+- _Tener posicionamiento en la Web_
+- _Brindar buen servicio al cliente_
+- _Funcionalidad de nuestra página para los usuarios_
+- _Lograr los niveles de servicio y soporte deseados, a un bajo costo_
+- _Ofertar sus productos y servicios_
+- _Permanecer siempre abierto, 7días x 24hrs_
+- _Solo pueden acceder personas con acceso a Internet o nuevas tecnologías_
+- _No tener múltiples idiomas_
 
 
 ## JUSTIFICACIÓN DEL PROYECTO
