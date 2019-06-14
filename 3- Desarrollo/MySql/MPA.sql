@@ -7,7 +7,7 @@ Primer_Nombre varchar (15) not null,
 Segundo_Nombre varchar (15),
 Primer_Apellido varchar (15) not null,
 Segundo_Apellido varchar (15),
-Correo_Electronico varchar (30) not null,
+Correo_Electronico varchar (50) not null,
 Contraseña varchar (15) not null,
 Teléfono varchar (15) not null,
 Edad integer (3) not null,
@@ -32,33 +32,9 @@ Id_Ciudad integer (10) not null,
 Nombre_Ciudad varchar (25) not null,
 Primary key (Id_Ciudad));
 /*----------------------------------------------*/
-Create table Tipo_de_Pago(
-Id_Pago integer (10) not null,
-Nombre_Tipo_de_Pago varchar (25) not null,
-Primary key (Id_Pago));
-/*----------------------------------------------*/
-create table Tarjeta_de_Credito(
-Id_Tarjeta_Credito integer (10) not null,
-Titular_de_la_tarjeta varchar (50) not null,
-Número_de_tarjeta bigint (16) not null,
-Fecha_de_Vencimiento date not null,
-CVV integer (5) not null,
-Tipo_de_PagoId_Pago integer (10) not null,
-primary key (Id_Tarjeta_Credito));
-/*----------------------------------------------*/
-create table Tarjeta_de_Debito(
-Id_Tarjeta_Debito integer (10) not null,
-Nombre_del_Banco varchar(20) not null,
-Tipo_de_Cuenta varchar(10) not null,
-Titular_de_la_tarjeta_debito varchar (30) not null,
-Número_de_tarjeta bigint (20) not null,
-Fecha_de_Vencimiento date not null,
-Tipo_de_PagoId_Pago integer (10) not null,
-primary key (Id_Tarjeta_Debito));
-/*----------------------------------------------*/
 Create table Dirección(
 Id_Dirección integer (10) not null,
-Dirección varchar (25) not null,
+Dirección varchar (50) not null,
 Cod_Postal integer (10) not null,
 UsuarioId_Usuario integer (10) not null,
 Primary key (Id_Dirección));
@@ -69,7 +45,27 @@ Fecha_Compra date not null,
 Cantidad_Compra float (5) not null,
 Totalidad float (10),
 UsuarioId_Usuario integer (10) not null,
-UsuarioTipo_DocumentoId_Documento integer (10) not null);
+UsuarioTipo_DocumentoId_Documento integer (10) not null,
+primary key (Id_Factura));
+/*----------------------------------------------*/
+create table Tarjeta_de_Credito(
+Id_Tarjeta_Credito integer (10) not null,
+Titular_de_la_tarjeta varchar (50) not null,
+Número_de_tarjeta bigint (16) not null,
+Fecha_de_Vencimiento date not null,
+CVV integer (5) not null,
+FacturaId_Factura integer (10) not null,
+primary key (Id_Tarjeta_Credito));
+/*----------------------------------------------*/
+create table Tarjeta_de_Debito(
+Id_Tarjeta_Debito integer (10) not null,
+Nombre_del_Banco varchar(20) not null,
+Tipo_de_Cuenta varchar(10) not null,
+Titular_de_la_tarjeta_debito varchar (30) not null,
+Número_de_tarjeta bigint (20) not null,
+Fecha_de_Vencimiento date not null,
+FacturaId_Factura integer (10) not null,
+primary key (Id_Tarjeta_Debito));
 /*----------------------------------------------*/
 Create table Envio(
 Id_Envio integer (10) not null,
@@ -130,12 +126,12 @@ add constraint foreign key (UsuarioId_Usuario, UsuarioTipo_DocumentoId_Documento
 references Usuario(Id_Usuario, Tipo_DocumentoId_Documento);
 
 alter table Tarjeta_de_Credito
-add foreign key (Tipo_de_PagoId_Pago)
-references Tipo_de_Pago(Id_Pago);
+add foreign key (FacturaId_Factura)
+references Factura(Id_Factura);
 
 alter table Tarjeta_de_Debito
-add foreign key (Tipo_de_PagoId_Pago)
-references Tipo_de_Pago(Id_Pago);
+add foreign key (FacturaId_Factura)
+references Factura(Id_Factura);
 
 alter table Dirección
 add foreign key (UsuarioId_Usuario)
@@ -154,17 +150,6 @@ references Marca(Id_Marca);
 alter table Producto
 add foreign key (CategoriaId_Categoria)
 references Categoria(Id_Categoria);
-
-alter table Factura
-add column Tipo_de_PagoId_Pago integer (10) not null;
-
-alter table Factura
-add constraint fk_Tipo_de_PagoId_Pago
-foreign key (Tipo_de_PagoId_Pago)
-references Tipo_de_Pago(Id_Pago);
-
-alter table Factura
-add primary key(Id_Factura ,Tipo_de_PagoId_Pago);
 
 alter table Envio
 add foreign key (FacturaId_Factura)
