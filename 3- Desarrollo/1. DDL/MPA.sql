@@ -46,7 +46,13 @@ Cantidad_Compra float (5) not null,
 Totalidad float (10),
 UsuarioId_Usuario integer (10) not null,
 UsuarioTipo_DocumentoId_Documento integer (10) not null,
+TPId_Tipo_de_Pago integer (10) not null,
 primary key (Id_Factura));
+/*----------------------------------------------*/
+create table Tipo_de_Pago(
+Id_Tipo_de_Pago integer (10) not null,
+Nombre_Tipo_Pago varchar(20) not null,
+primary key (Id_Tipo_de_Pago));
 /*----------------------------------------------*/
 create table Tarjeta_de_Credito(
 Id_Tarjeta_Credito integer (10) not null,
@@ -54,7 +60,7 @@ Titular_de_la_tarjeta varchar (50) not null,
 Número_de_tarjeta bigint (16) not null,
 Fecha_de_Vencimiento date not null,
 CVV integer (5) not null,
-FacturaId_Factura integer (10) not null,
+TPId_Tipo_de_Pago integer (10) not null,
 primary key (Id_Tarjeta_Credito));
 /*----------------------------------------------*/
 create table Tarjeta_de_Debito(
@@ -64,7 +70,7 @@ Tipo_de_Cuenta varchar(10) not null,
 Titular_de_la_tarjeta_debito varchar (30) not null,
 Número_de_tarjeta bigint (20) not null,
 Fecha_de_Vencimiento date not null,
-FacturaId_Factura integer (10) not null,
+TPId_Tipo_de_Pago integer (10) not null,
 primary key (Id_Tarjeta_Debito));
 /*----------------------------------------------*/
 Create table Envio(
@@ -125,13 +131,17 @@ alter table Factura
 add constraint foreign key (UsuarioId_Usuario, UsuarioTipo_DocumentoId_Documento)
 references Usuario(Id_Usuario, Tipo_DocumentoId_Documento);
 
+alter table Factura
+add foreign key (TPId_Tipo_de_Pago)
+references Tipo_de_Pago(Id_Tipo_de_Pago);
+
 alter table Tarjeta_de_Credito
-add foreign key (FacturaId_Factura)
-references Factura(Id_Factura);
+add foreign key (TPId_Tipo_de_Pago)
+references Tipo_de_Pago(Id_Tipo_de_Pago);
 
 alter table Tarjeta_de_Debito
-add foreign key (FacturaId_Factura)
-references Factura(Id_Factura);
+add foreign key (TPId_Tipo_de_Pago)
+references Tipo_de_Pago(Id_Tipo_de_Pago);
 
 alter table Dirección
 add foreign key (UsuarioId_Usuario)
@@ -166,5 +176,4 @@ references Producto(Id_Producto),
 
 constraint detalle_Factura1
 foreign key (FacturaId_Factura)
-references Factura(Id_Factura)
-);
+references Factura(Id_Factura));
