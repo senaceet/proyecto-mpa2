@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="css/gestionProducto.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>Administrador</title>
 </head>
 <body>
 	<header>
-		<img src="">
+		
+		<img src="img/Logo.png">
 
 	</header>
+    <form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltip01">First name</label>
+      <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltip02">Last name</label>
+      <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Otto" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltipUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationTooltip03">City</label>
+      <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+      <div class="invalid-tooltip">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationTooltip04">State</label>
+      <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+      <div class="invalid-tooltip">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationTooltip05">Zip</label>
+      <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+      <div class="invalid-tooltip">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
 	<section>
-		<head></head>
+		<head>
+			<hr />
+			<h1>Producto</h1>
+
+			
+		</head>
 		<nav>
 		<form >
-				<button></button>
+				<input id="boton1" type="submit" name="Boton" value="AGREGAR PRODUCTO"><br><br>
 				<label class="pintar">Tipo de producto</label>
 				<input type='text' name="Tipo deproducto" required>
-				<label id="0">Cantidad</label>
-					<input type="number" name="num1" >
-				<label id="1">Fecha de Ingreso</label>
-					<input type="number" name="num1" >
+				<label >Cantidad</label>
+					<input type='text' name="num1" >
+				<label >Fecha de Ingreso</label>
+					<input type='text' name="num1" >
 				<label id="2">Dia</label>
-					<input type="number" name="num1" >
-				<label id="3">Año</label>
-					<input type="number" name="num1" >
+					<input type='text' name="num1" >
+				<label >Año</label>
+					<input type='text' name="num1" >
 				<label id="4">Modelo</label>
-					<input type="number" name="num1" >
+					<input type='text' name="num1" >
 				<label id="5">precio unitario</label>
 					<input type="number" name="num1" >
 				<label id="6">proveedor</label>
@@ -35,13 +97,77 @@
 					<input type="number" name="num1" >
 				<checkbox id = "9">Mes</checkbox>
 				<checkbox id = "10">Categoria</checkbox>
+				<input  id="boton2"  type="submit" name="Boton2" value="GUARDAR">
+
 				
 		</form>
+		<form class="needs-validation" novalidate>
+    	<div class="form-row">
+   		<div class="col-md-4 mb-3">
+      		
 
 
-		</nav>
+		</nav><br>
+
+	 
 
 		
+	</section>
+	<section>
+		<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltip01">First name</label>
+      <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltip02">Last name</label>
+      <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Otto" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltipUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationTooltip03">City</label>
+      <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+      <div class="invalid-tooltip">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationTooltip04">State</label>
+      <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+      <div class="invalid-tooltip">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationTooltip05">Zip</label>
+      <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+      <div class="invalid-tooltip">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
 	</section>
 </body>
 </html>
