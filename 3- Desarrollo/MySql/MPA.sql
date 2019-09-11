@@ -1,6 +1,6 @@
 create database MPA;
 use MPA;
-/*----------------------------------------------*/
+/*-----------------------creacion de tablas-----------------------*/
 create table Usuario (
 Id_Usuario integer (10) not null,
 Primer_Nombre varchar (15) not null,
@@ -66,8 +66,6 @@ Primary key (Id_Dirección));
 Create table Factura(
 Id_Factura integer (10) not null,
 Fecha_Compra date not null,
-Cantidad_Compra float (5) not null,
-Totalidad float (10),
 UsuarioId_Usuario integer (10) not null,
 UsuarioTipo_DocumentoId_Documento integer (10) not null);
 /*----------------------------------------------*/
@@ -81,9 +79,10 @@ create table Producto (
 Id_Producto integer (10) not null,
 Nombre_Producto varchar (50) not null,
 Descripción varchar (100) not null,
-Cantidad integer (10) not null,
+marcaIdmarca integer (10) not null,
 Precio_Unitario integer (10)  not null,
 Imagen blob null,
+UnidadStock float NOT NULL,
 Primary key (Id_Producto));
 /*----------------------------------------------*/
 create table Marca (
@@ -107,7 +106,8 @@ create table Servidor_de_Correo(
 Id_Servidor_Correo integer (10),
 Tipo_Servidor_Web varchar (20),
 primary key (Id_Servidor_Correo));
-/*----------------------------------------------*/
+
+/*---------------------------Primary Key foreign key-------------------*/
 
 alter table Usuario
 add constraint fk_Tipo_DocumentoId_Documento
@@ -183,3 +183,4 @@ constraint detalle_Factura1
 foreign key (FacturaId_Factura)
 references Factura(Id_Factura)
 );
+
