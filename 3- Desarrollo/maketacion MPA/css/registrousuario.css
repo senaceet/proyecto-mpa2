@@ -46,9 +46,9 @@ nav{
 	
 }
 .boton1{
-	background-image: linear-gradient(#6A51AD , #64b3f4);
+	/*background-image: linear-gradient(#6A51AD , #64b3f4);*/
 	border-radius: 15px 15px;
-	
+	background: -moz-linear-gradient(right, red, blue);
 	width: 20%;
 	height:40px;
 	float: left;
@@ -75,9 +75,8 @@ th, td {
 }
 footer{
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	border: 3px solid #000000FF;
-	border-radius: 15px 15px 15px 15px;
 	box-sizing: border-box;
 	color: #FFFFFFFF;
 	text-align: center;
@@ -85,3 +84,42 @@ footer{
 	font-synthesis: 24;
 
 }
+.colorear{
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	
+	border: 1px solid ;
+	margin: 0;
+	
+	background: -moz-linear-gradient(right, white, black);
+
+
+}
+.color{
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	border: 1px solid ;
+	margin:22% 0% 0% 0%;
+	float: left;
+
+	background: -moz-linear-gradient(right,  white,black);
+}
+.div{
+	width: 30%;
+	height:9%;
+	text-align: center;
+	float: center;
+	
+
+}
+.div2{
+	width: 30%;
+	height:10%;
+	text-align: center;
+	float: right;
+	
+
+}
+

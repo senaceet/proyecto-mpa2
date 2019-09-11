@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/registrousuario.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+
 	<title>Registro</title>
 </head>
 <body>
@@ -89,7 +91,7 @@
     <label class="custom-control-label" for="customControlValidation1">  No soy un robot    </label>
     <div class="invalid-feedback">Example invalid feedback text</div>
   </div>
-<button class="boton1" type="submit">Submit form</button>
+<button class="boton1" type="submit">REGISTRARSE</button>
 <br><br><br>
 <nav class="pintartabla">
 <p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -100,11 +102,121 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </nav>
 </section>
+utilizar un mapa de google maps para posicionar una marca y un popup</h1>
+
+    <div id="map_canvas" style="width:700px;height:500px;"></div>
+
+ 
+
+    <script type="text/javascript">
+
+        var latlng = new google.maps.LatLng(41.375822, 2.177770);
+
+        var latlng2 = new google.maps.LatLng(41.362822, 2.167770);
+                var myOptions = {
+
+            zoom: 14,
+
+            center: latlng,
+
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+
+        };
+
+ 
+
+        // generamos el mapa
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+ 
+
+        // añadimos una marca
+
+        var marker = new google.maps.Marker({
+
+            position: latlng,
+
+            title: 'Estatua Cristobal Colon',
+
+            draggable: true
+
+        });
+
+        // añadimos una segunda marca
+
+        var marker2 = new google.maps.Marker({
+
+            position: latlng2,
+
+            title: 'Castillo de Montjuic',
+
+            draggable: true
+
+        });
+
+ 
+
+        marker.setMap(map);
+
+        marker2.setMap(map);
+
+ 
+
+        var popup = new google.maps.InfoWindow({
+
+            content: 'Estatua Cristobal Colon Barcelona (Spain)',
+
+            position: latlng
+
+        });
+
+ 
+
+        var popup2 = new google.maps.InfoWindow({
+
+            content: 'Castillo de Montjuic',
+
+            position: latlng2
+
+        });
+
+        popup.open(map);
+
+        popup2.open(map);
+
+    </script>
 
 
-</body>
+
 <footer>
   
+  <nav class="colorear">
+    <p>Conectate ha nuestras comunidad de trabajo.</p> 
+  </nav>
+  <div class="div">
+    <h1>Productos</h1>
+    <ul>
+      
+      <br>Teclados<br>
+      Mouse<br>
+      Memorias<br>
+      
+    </ul>
+  </div>
+  <div class="div2">
+    <h2>zona</h2>
+    <ul>
+      
+      <br>geimeres<br>
+      pc<br>
+      accesorios<br>
+    </ul>
+  </div>
+  <footer class="color">
+    copirain MPA@2019
+  </footer>
+ 
 </footer>
-
+</body>
 </html>
