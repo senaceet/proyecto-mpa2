@@ -1,0 +1,99 @@
+*{
+
+}
+.imag{
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+.img{
+	width: 40%;
+	height: auto;
+	
+
+}
+section{
+	overflow: auto;
+	width: 100%;
+	text-align: center;
+	height: auto;
+
+
+}
+head{
+	float: left;
+	width: 200%;
+
+}
+hr {
+	color: #0056b2
+	border color:#123456;
+	
+	}
+h1{
+	
+}
+.nav{
+
+	width: 60%;
+	height: auto;
+	float: left;
+	margin-left: 20%;
+	
+}
+.boton1{
+	background-image: linear-gradient(green , #B2C638FF);
+	border-radius: 10px;
+	float: left;
+	margin-left: 0;
+	width: 30%;
+	height: 50px;
+	
+}
+.boton2{
+	background-image: linear-gradient(green  , #B2C638FF);
+	border-radius: 10px;
+	float: right;
+	
+	height: 50px;
+	
+}
+
+.pintartabla {  
+	border: solid 3px green;
+	border-radius: 15px 15px;
+	width: 90%;
+	float: left;
+	margin-left: 5%;
+}
+th, td {
+	border: solid 3px green;
+}
+.hr1{
+	float: left;
+	width: 20%;
+	margin-left: 25%; 
+	border :1px solid;
+
+}
+.div{
+	width: 100%
+
+
+}
+.hr2{
+	float: right;
+	width: 20%;
+	
+	margin-right:  25%;
+	border :1px solid;
+
+}
+.div1{
+	width: 60%;
+
+}
+
+.hr3{
+	border :1px solid;
+}

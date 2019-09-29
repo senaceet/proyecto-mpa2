@@ -1,0 +1,46 @@
+
+.logo{
+	width: 40%;
+	height: 500px;
+}
+.div{
+	float: right;
+	margin-right: 30%;
+	margin:  -15% 30%;
+}
+.img{
+	display: flex;
+	align-content: center;
+	margin-left: 20%;
+	padding: 06% 0%;
+}
+.P{
+	float: left;
+	margin-left: -20%;
+	padding: 20% 5%;
+}
+.img1{
+	display: flex;
+	align-content: center;
+	margin-left: -7%;
+	padding: 05% 15%;
+}
+.P1{
+	float: left;
+	margin-left: -30%;
+	padding: 20% 5%;
+
+}
+.img2{
+	display: flex;
+	align-content: center;
+	margin-left: -3%;
+	padding: -05% 10%;
+
+}
+.P2{
+	float: left;
+	margin-left: -60%;
+	padding: 20% 5%;
+
+}
