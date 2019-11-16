@@ -1,0 +1,156 @@
+*{
+
+}
+.img{
+	width: 40%;
+	height: auto;
+	
+
+}
+
+section{
+	overflow: auto;
+	width: 100%;
+	text-align: center;
+	height: auto;
+
+
+}
+head{
+	float: left;
+	width: 100%;
+	height: 100px;
+
+}
+hr{
+	color: #0056b2
+	border color:#123456
+	width:50%;
+	height:3px;
+
+	 ;
+	
+	}
+h1{
+	
+}
+.nav{
+	height: auto;
+	overflow: auto;
+}
+.av{
+   
+	width: 60%;
+	height: auto;
+	text-align: center;
+	/*background-image: linear-gradient(#6A51AD , #64b3f4);*/
+	float: left;
+	margin-left: 30%;
+	
+}
+.boton1{
+	/*background-image: linear-gradient(#6A51AD , #64b3f4);*/
+	border-radius: 15px 15px;
+	background: -moz-linear-gradient(#6A51AD , #64b3f4);
+	width: 12%;
+	height:40px;
+	float: right;
+	margin-right: 30%;
+	padding: 0;
+	
+	
+}
+.boton2{
+	background-image: linear-gradient(red);
+	border-radius: 10px;
+	width: 18%;
+	height:50px;
+	float: left;
+	margin-left: 42%;
+}
+
+.pintartabla {  
+	width: 60%;
+	height: auto;
+	text-align: center;
+	/*background-image: linear-gradient(#6A51AD , #64b3f4);*/
+	float: left;
+	margin-left: 20%;
+}
+th, td {
+	border: solid 3px #7F5BA3FF;
+}
+
+.colorear{
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	
+	border: 1px solid ;
+	margin: 0;
+	
+	background: -moz-linear-gradient(right, white, black);
+
+
+}
+.color{
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	border: 1px solid ;
+	margin:22% 0% 0% 0%;
+	float: left;
+
+	background: -moz-linear-gradient(right,  white,black);
+}
+.div{
+	width: 30%;
+	height:9%;
+	text-align: center;
+	float: center;
+	
+
+}
+.div2{
+	width: 30%;
+	height:10%;
+	text-align: center;
+	float: right;
+	
+
+}
+.checkbox{
+	width: 50%;
+	height: 100px;
+
+}
+.div3{
+	border: 3PX solid #2160DDFF;
+	border-radius: 3px 3px;
+	width: 60%;
+	
+	
+
+}
+.hr2{
+	float: right;
+	width: 20%;
+	
+	margin-right:  25%;
+	border :1px solid;
+
+}
+.hr1{
+	float: left;
+	width: 20%;
+	margin-left: 25%; 
+	border :1px solid;
+
+}
+.hr4{
+	float: left;
+	width: 50%;
+	margin-left: 25%; 
+	border :1px solid;
+
+}
